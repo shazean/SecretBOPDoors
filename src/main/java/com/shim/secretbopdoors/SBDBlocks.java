@@ -1,0 +1,167 @@
+package com.shim.secretbopdoors;
+
+import com.shim.secretdoors.SecretDoors;
+import com.shim.secretdoors.registry.SDItems;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TrapDoorBlock;
+import net.minecraft.world.level.material.Material;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.function.Supplier;
+
+public class SBDBlocks {
+
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, SecretBOPDoors.MODID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SecretBOPDoors.MODID);
+
+    public static final Map<RegistryObject<? extends Block>, String> BLOCK_LANG_EN_US = new HashMap<>();
+    public static final LinkedList<RegistryObject<? extends Block>> DOOR_LOOT_TABLE = new LinkedList<>();
+    public static final LinkedList<RegistryObject<? extends Block>> TRAPDOOR_LOOT_TABLE = new LinkedList<>();
+
+    private static <T extends Block> RegistryObject<T> registerDoorBlock(String nameIn, String localizationIn, Supplier<T> blockIn) {
+        RegistryObject<T> block = BLOCKS.register(nameIn, blockIn);
+        ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+        BLOCK_LANG_EN_US.put(block, localizationIn);
+        DOOR_LOOT_TABLE.add(block);
+        return block;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerTrapdoorBlock(String nameIn, String localizationIn, Supplier<T> blockIn) {
+        RegistryObject<T> block = BLOCKS.register(nameIn, blockIn);
+        ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+        BLOCK_LANG_EN_US.put(block, localizationIn);
+        TRAPDOOR_LOOT_TABLE.add(block);
+        return block;
+    }
+
+    public static RegistryObject<DoorBlock> SECRET_FIR_PLANK_DOOR = registerDoorBlock("secret_fir_plank_door", "Secret Fir Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_REDWOOD_PLANK_DOOR = registerDoorBlock("secret_redwood_plank_door", "Secret Redwood Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_CHERRY_PLANK_DOOR = registerDoorBlock("secret_cherry_plank_door", "Secret Cherry Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_MAHOGANY_PLANK_DOOR = registerDoorBlock("secret_mahogany_plank_door", "Secret Mahogany Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_JACARANDA_PLANK_DOOR = registerDoorBlock("secret_jacaranda_plank_door", "Secret Jacaranda Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_PALM_PLANK_DOOR = registerDoorBlock("secret_palm_plank_door", "Secret Palm Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_WILLOW_PLANK_DOOR = registerDoorBlock("secret_willow_plank_door", "Secret Willow Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_DEAD_PLANK_DOOR = registerDoorBlock("secret_dead_plank_door", "Secret Dead Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_MAGIC_PLANK_DOOR = registerDoorBlock("secret_magic_plank_door", "Secret Magic Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_UMBRAN_PLANK_DOOR = registerDoorBlock("secret_umbran_plank_door", "Secret Umbran Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HELLBARK_PLANK_DOOR = registerDoorBlock("secret_hellbark_plank_door", "Secret Hellbark Plank Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<DoorBlock> SECRET_FIR_LOG_DOOR = registerDoorBlock("secret_fir_log_door", "Secret Fir Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_REDWOOD_LOG_DOOR = registerDoorBlock("secret_redwood_log_door", "Secret Redwood Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_CHERRY_LOG_DOOR = registerDoorBlock("secret_cherry_log_door", "Secret Cherry Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_MAHOGANY_LOG_DOOR = registerDoorBlock("secret_mahogany_log_door", "Secret Mahogany Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_JACARANDA_LOG_DOOR = registerDoorBlock("secret_jacaranda_log_door", "Secret Jacaranda Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_PALM_LOG_DOOR = registerDoorBlock("secret_palm_log_door", "Secret Palm Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_WILLOW_LOG_DOOR = registerDoorBlock("secret_willow_log_door", "Secret Willow Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_DEAD_LOG_DOOR = registerDoorBlock("secret_dead_log_door", "Secret Dead Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_MAGIC_LOG_DOOR = registerDoorBlock("secret_magic_log_door", "Secret Magic Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_UMBRAN_LOG_DOOR = registerDoorBlock("secret_umbran_log_door", "Secret Umbran Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HELLBARK_LOG_DOOR = registerDoorBlock("secret_hellbark_log_door", "Secret Hellbark Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_FIR_LOG_DOOR = registerDoorBlock("secret_stripped_fir_log_door", "Secret Stripped Fir Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_REDWOOD_LOG_DOOR = registerDoorBlock("secret_stripped_redwood_log_door", "Secret Stripped Redwood Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_CHERRY_LOG_DOOR = registerDoorBlock("secret_stripped_cherry_log_door", "Secret Stripped Cherry Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_MAHOGANY_LOG_DOOR = registerDoorBlock("secret_stripped_mahogany_log_door", "Secret Stripped Mahogany Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_JACARANDA_LOG_DOOR = registerDoorBlock("secret_stripped_jacaranda_log_door", "Secret Stripped Jacaranda Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_PALM_LOG_DOOR = registerDoorBlock("secret_stripped_palm_log_door", "Secret Stripped Palm Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_WILLOW_LOG_DOOR = registerDoorBlock("secret_stripped_willow_log_door", "Secret Stripped Willow Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_DEAD_LOG_DOOR = registerDoorBlock("secret_stripped_dead_log_door", "Secret Stripped Dead Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_MAGIC_LOG_DOOR = registerDoorBlock("secret_stripped_magic_log_door", "Secret Stripped Magic Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_UMBRAN_LOG_DOOR = registerDoorBlock("secret_stripped_umbran_log_door", "Secret Stripped Umbran Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HELLBARK_LOG_DOOR = registerDoorBlock("secret_stripped_hellbark_log_door", "Secret Stripped Hellbark Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_fir_log_door", "Secret Stripped Horizontal Fir Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_redwood_log_door", "Secret Stripped Horizontal Redwood Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_CHERRY_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_cherry_log_door", "Secret Stripped Horizontal Cherry Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_MAHOGANY_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_mahogany_log_door", "Secret Stripped Horizontal Mahogany Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_JACARANDA_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_jacaranda_log_door", "Secret Stripped Horizontal Jacaranda Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_PALM_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_palm_log_door", "Secret Stripped Horizontal Palm Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_WILLOW_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_willow_log_door", "Secret Stripped Horizontal Willow Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_DEAD_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_dead_log_door", "Secret Stripped Horizontal Dead Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_MAGIC_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_magic_log_door", "Secret Stripped Horizontal Magic Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_UMBRAN_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_umbran_log_door", "Secret Stripped Horizontal Umbran Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_STRIPPED_HORIZONTAL_HELLBARK_LOG_DOOR = registerDoorBlock("secret_stripped_horizontal_hellbark_log_door", "Secret Stripped Horizontal Hellbark Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_FIR_LOG_DOOR = registerDoorBlock("secret_horizontal_fir_log_door", "Secret Horizontal Fir Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_REDWOOD_LOG_DOOR = registerDoorBlock("secret_horizontal_redwood_log_door", "Secret Horizontal Redwood Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_CHERRY_LOG_DOOR = registerDoorBlock("secret_horizontal_cherry_log_door", "Secret Horizontal Cherry Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_MAHOGANY_LOG_DOOR = registerDoorBlock("secret_horizontal_mahogany_log_door", "Secret Horizontal Mahogany Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_JACARANDA_LOG_DOOR = registerDoorBlock("secret_horizontal_jacaranda_log_door", "Secret Horizontal Jacaranda Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_PALM_LOG_DOOR = registerDoorBlock("secret_horizontal_palm_log_door", "Secret Horizontal Palm Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_WILLOW_LOG_DOOR = registerDoorBlock("secret_horizontal_willow_log_door", "Secret Horizontal Willow Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_DEAD_LOG_DOOR = registerDoorBlock("secret_horizontal_dead_log_door", "Secret Horizontal Dead Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_MAGIC_LOG_DOOR = registerDoorBlock("secret_horizontal_magic_log_door", "Secret Horizontal Magic Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_UMBRAN_LOG_DOOR = registerDoorBlock("secret_horizontal_umbran_log_door", "Secret Horizontal Umbran Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_HORIZONTAL_HELLBARK_LOG_DOOR = registerDoorBlock("secret_horizontal_hellbark_log_door", "Secret Horizontal Hellbark Log Door", () -> new DoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<DoorBlock> SECRET_WHITE_SANDSTONE_DOOR = registerDoorBlock("secret_white_sandstone_door", "Secret White Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_CUT_WHITE_SANDSTONE_DOOR = registerDoorBlock("secret_cut_white_sandstone_door", "Secret Cut White Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_SMOOTH_WHITE_SANDSTONE_DOOR = registerDoorBlock("secret_smooth_white_sandstone_door", "Secret Smooth White Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_ORANGE_SANDSTONE_DOOR = registerDoorBlock("secret_orange_sandstone_door", "Secret Orange Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_CUT_ORANGE_SANDSTONE_DOOR = registerDoorBlock("secret_cut_orange_sandstone_door", "Secret Cut Orange Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_SMOOTH_ORANGE_SANDSTONE_DOOR = registerDoorBlock("secret_smooth_orange_sandstone_door", "Secret Smooth Orange Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_BLACK_SANDSTONE_DOOR = registerDoorBlock("secret_black_sandstone_door", "Secret Black Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_CUT_BLACK_SANDSTONE_DOOR = registerDoorBlock("secret_cut_black_sandstone_door", "Secret Cut Black Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<DoorBlock> SECRET_SMOOTH_BLACK_SANDSTONE_DOOR = registerDoorBlock("secret_smooth_black_sandstone_door", "Secret Smooth Black Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+
+    public static RegistryObject<DoorBlock> SECRET_MUD_BRICKS_DOOR = registerDoorBlock("secret_mud_bricks_door", "Secret Mud Bricks Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+
+    public static RegistryObject<TrapDoorBlock> SECRET_FIR_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_fir_plank_trapdoor", "Secret Fir Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_REDWOOD_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_redwood_plank_trapdoor", "Secret Redwood Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_CHERRY_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_cherry_plank_trapdoor", "Secret Cherry Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_MAHOGANY_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_mahogany_plank_trapdoor", "Secret Mahogany Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_JACARANDA_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_jacaranda_plank_trapdoor", "Secret Jacaranda Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_PALM_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_palm_plank_trapdoor", "Secret Palm Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_WILLOW_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_willow_plank_trapdoor", "Secret Willow Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_DEAD_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_dead_plank_trapdoor", "Secret Dead Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_MAGIC_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_magic_plank_trapdoor", "Secret Magic Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_UMBRAN_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_umbran_plank_trapdoor", "Secret Umbran Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_HELLBARK_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_hellbark_plank_trapdoor", "Secret Hellbark Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<TrapDoorBlock> SECRET_FIR_LOG_TRAPDOOR = registerTrapdoorBlock("secret_fir_log_trapdoor", "Secret Fir Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_REDWOOD_LOG_TRAPDOOR = registerTrapdoorBlock("secret_redwood_log_trapdoor", "Secret Redwood Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_CHERRY_LOG_TRAPDOOR = registerTrapdoorBlock("secret_cherry_log_trapdoor", "Secret Cherry Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_MAHOGANY_LOG_TRAPDOOR = registerTrapdoorBlock("secret_mahogany_log_trapdoor", "Secret Mahogany Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_JACARANDA_LOG_TRAPDOOR = registerTrapdoorBlock("secret_jacaranda_log_trapdoor", "Secret Jacaranda Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_PALM_LOG_TRAPDOOR = registerTrapdoorBlock("secret_palm_log_trapdoor", "Secret Palm Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_WILLOW_LOG_TRAPDOOR = registerTrapdoorBlock("secret_willow_log_trapdoor", "Secret Willow Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_DEAD_LOG_TRAPDOOR = registerTrapdoorBlock("secret_dead_log_trapdoor", "Secret Dead Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_MAGIC_LOG_TRAPDOOR = registerTrapdoorBlock("secret_magic_log_trapdoor", "Secret Magic Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_UMBRAN_LOG_TRAPDOOR = registerTrapdoorBlock("secret_umbran_log_trapdoor", "Secret Umbran Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_HELLBARK_LOG_TRAPDOOR = registerTrapdoorBlock("secret_hellbark_log_trapdoor", "Secret Hellbark Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_FIR_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_fir_log_trapdoor", "Secret Stripped Fir Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_REDWOOD_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_redwood_log_trapdoor", "Secret Stripped Redwood Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_CHERRY_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_cherry_log_trapdoor", "Secret Stripped Cherry Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_MAHOGANY_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_mahogany_log_trapdoor", "Secret Stripped Mahogany Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_JACARANDA_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_jacaranda_log_trapdoor", "Secret Stripped Jacaranda Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_PALM_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_palm_log_trapdoor", "Secret Stripped Palm Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_WILLOW_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_willow_log_trapdoor", "Secret Stripped Willow Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_DEAD_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_dead_log_trapdoor", "Secret Stripped Dead Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_MAGIC_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_magic_log_trapdoor", "Secret Stripped Magic Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_UMBRAN_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_umbran_log_trapdoor", "Secret Stripped Umbran Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_STRIPPED_HELLBARK_LOG_TRAPDOOR = registerTrapdoorBlock("secret_stripped_hellbark_log_trapdoor", "Secret Stripped Hellbark Log Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+
+    public static RegistryObject<TrapDoorBlock> SECRET_WHITE_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_white_sandstone_trapdoor", "Secret White Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_CUT_WHITE_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_cut_white_sandstone_trapdoor", "Secret Cut White Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_SMOOTH_WHITE_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_smooth_white_sandstone_trapdoor", "Secret Smooth White Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_ORANGE_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_orange_sandstone_trapdoor", "Secret Orange Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_CUT_ORANGE_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_cut_orange_sandstone_trapdoor", "Secret Cut Orange Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_SMOOTH_ORANGE_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_smooth_orange_sandstone_trapdoor", "Secret Smooth Orange Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_BLACK_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_black_sandstone_trapdoor", "Secret Black Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_CUT_BLACK_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_cut_black_sandstone_trapdoor", "Secret Cut Black Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static RegistryObject<TrapDoorBlock> SECRET_SMOOTH_BLACK_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_smooth_black_sandstone_trapdoor", "Secret Smooth Black Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+
+    public static RegistryObject<TrapDoorBlock> SECRET_MUD_BRICKS_TRAPDOOR = registerTrapdoorBlock("secret_mud_bricks_trapdoor", "Secret Mud Bricks Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
+
+}

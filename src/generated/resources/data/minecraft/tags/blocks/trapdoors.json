@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#secretdoors:secret_wooden_trapdoors",
+    "#secretdoors:secret_stone_trapdoors"
+  ]
+}
