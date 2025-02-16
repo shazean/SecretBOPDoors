@@ -47,9 +47,7 @@ public class SBDBlockTags extends BlockTagsProvider {
         tag(SDTags.Blocks.SECRET_STONE_DOORS)
                 .add(SBDBlocks.SECRET_WHITE_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_SMOOTH_WHITE_SANDSTONE_DOOR.get())
                 .add(SBDBlocks.SECRET_ORANGE_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_CUT_ORANGE_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_SMOOTH_ORANGE_SANDSTONE_DOOR.get())
-                .add(SBDBlocks.SECRET_BLACK_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_DOOR.get())
-
-                .add(SBDBlocks.SECRET_MUD_BRICKS_DOOR.get());
+                .add(SBDBlocks.SECRET_BLACK_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_DOOR.get()).add(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_DOOR.get());
 
         tag(SDTags.Blocks.SECRET_WOODEN_DOORS)
                 .addTag(SDTags.Blocks.SECRET_WOODEN_PLANK_DOORS)
@@ -84,9 +82,7 @@ public class SBDBlockTags extends BlockTagsProvider {
         tag(SDTags.Blocks.SECRET_STONE_TRAPDOORS)
                 .add(SBDBlocks.SECRET_WHITE_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_SMOOTH_WHITE_SANDSTONE_TRAPDOOR.get())
                 .add(SBDBlocks.SECRET_ORANGE_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_CUT_ORANGE_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_SMOOTH_ORANGE_SANDSTONE_TRAPDOOR.get())
-                .add(SBDBlocks.SECRET_BLACK_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_TRAPDOOR.get())
-
-                .add(SBDBlocks.SECRET_MUD_BRICKS_TRAPDOOR.get());
+                .add(SBDBlocks.SECRET_BLACK_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_TRAPDOOR.get()).add(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_TRAPDOOR.get());
 
         tag(SDTags.Blocks.SECRET_WOODEN_TRAPDOORS)
                 .addTag(SDTags.Blocks.SECRET_WOODEN_PLANK_TRAPDOORS)

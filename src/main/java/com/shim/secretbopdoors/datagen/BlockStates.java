@@ -58,29 +58,29 @@ public class BlockStates extends BlockStateProvider {
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_UMBRAN_LOG_DOOR.get(), "stripped_umbran_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_HELLBARK_LOG_DOOR.get(), "stripped_hellbark_log");
 
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR.get(), "stripped_fir_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "stripped_redwood_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_CHERRY_LOG_DOOR.get(), "stripped_cherry_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAHOGANY_LOG_DOOR.get(), "stripped_mahogany_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_JACARANDA_LOG_DOOR.get(), "stripped_jacaranda_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_PALM_LOG_DOOR.get(), "stripped_palm_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_WILLOW_LOG_DOOR.get(), "stripped_willow_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_DEAD_LOG_DOOR.get(), "stripped_dead_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAGIC_LOG_DOOR.get(), "stripped_magic_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_UMBRAN_LOG_DOOR.get(), "stripped_umbran_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_HELLBARK_LOG_DOOR.get(), "stripped_hellbark_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR.get(), "stripped_fir_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "stripped_redwood_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_CHERRY_LOG_DOOR.get(), "stripped_cherry_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAHOGANY_LOG_DOOR.get(), "stripped_mahogany_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_JACARANDA_LOG_DOOR.get(), "stripped_jacaranda_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_PALM_LOG_DOOR.get(), "stripped_palm_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_WILLOW_LOG_DOOR.get(), "stripped_willow_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_DEAD_LOG_DOOR.get(), "stripped_dead_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAGIC_LOG_DOOR.get(), "stripped_magic_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_UMBRAN_LOG_DOOR.get(), "stripped_umbran_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_HELLBARK_LOG_DOOR.get(), "stripped_hellbark_log");
 
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_FIR_LOG_DOOR.get(), "fir_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "redwood_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_CHERRY_LOG_DOOR.get(), "cherry_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_MAHOGANY_LOG_DOOR.get(), "mahogany_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_JACARANDA_LOG_DOOR.get(), "jacaranda_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_PALM_LOG_DOOR.get(), "palm_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_WILLOW_LOG_DOOR.get(), "willow_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_DEAD_LOG_DOOR.get(), "dead_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_MAGIC_LOG_DOOR.get(), "magic_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_UMBRAN_LOG_DOOR.get(), "umbran_log");
-        horizontalBOPDoorBlock(SBDBlocks.SECRET_HORIZONTAL_HELLBARK_LOG_DOOR.get(), "hellbark_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_FIR_LOG_DOOR.get(), "fir_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "redwood_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_CHERRY_LOG_DOOR.get(), "cherry_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_MAHOGANY_LOG_DOOR.get(), "mahogany_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_JACARANDA_LOG_DOOR.get(), "jacaranda_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_PALM_LOG_DOOR.get(), "palm_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_WILLOW_LOG_DOOR.get(), "willow_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_DEAD_LOG_DOOR.get(), "dead_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_MAGIC_LOG_DOOR.get(), "magic_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_UMBRAN_LOG_DOOR.get(), "umbran_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_HELLBARK_LOG_DOOR.get(), "hellbark_log");
 
         secretDoorBlock(SBDBlocks.SECRET_WHITE_SANDSTONE_DOOR.get(), "white_sandstone");
         secretDoorBlock(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_DOOR.get(), "cut_white_sandstone");
@@ -91,8 +91,6 @@ public class BlockStates extends BlockStateProvider {
         secretDoorBlock(SBDBlocks.SECRET_BLACK_SANDSTONE_DOOR.get(), "black_sandstone");
         secretDoorBlock(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_DOOR.get(), "cut_black_sandstone");
         secretDoorBlock(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_DOOR.get(), "black_sandstone_top");
-
-        secretDoorBlock(SBDBlocks.SECRET_MUD_BRICKS_DOOR.get(), "mud_bricks");
 
 
         secretTrapdoorBlock(SBDBlocks.SECRET_FIR_PLANK_TRAPDOOR.get(), "fir_planks");
@@ -140,17 +138,12 @@ public class BlockStates extends BlockStateProvider {
         secretTrapdoorBlock(SBDBlocks.SECRET_BLACK_SANDSTONE_TRAPDOOR.get(), "black_sandstone");
         secretTrapdoorBlock(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_TRAPDOOR.get(), "cut_black_sandstone");
         secretTrapdoorBlock(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_TRAPDOOR.get(), "black_sandstone_top");
-
-        secretTrapdoorBlock(SBDBlocks.SECRET_MUD_BRICKS_TRAPDOOR.get(), "mud_bricks");
     }
     
     public void secretDoorBlock(DoorBlock block, String texture) {
         doorBlock(block, new ResourceLocation(BiomesOPlenty.MOD_ID, "block/" + texture), new ResourceLocation(BiomesOPlenty.MOD_ID, "block/" + texture));
     }
-//
-//    public void horizontalDoorBlock(DoorBlock block, String texture) {
-//        doorBlock(block, modLoc("block/" + texture), modLoc("block/" + texture));
-//    }
+
 
     public void secretTrapdoorBlock(TrapDoorBlock block, String texture) {
         trapdoorBlock(block, new ResourceLocation(BiomesOPlenty.MOD_ID, "block/" + texture), true);
@@ -160,25 +153,19 @@ public class BlockStates extends BlockStateProvider {
         return new ResourceLocation(BiomesOPlenty.MOD_ID, name);
     }
 
+    public ResourceLocation baseLoc(String name) {
+        return new ResourceLocation(SecretDoors.MODID, name);
+    }
 
     protected void horizontalDoorBlock(DoorBlock block, String texture) {
-        this.doorBlock(block, models().withExistingParent(block.getRegistryName().getPath() + "_bottom", modLoc("horizontal_door_bottom")).texture("bottom", mcLoc("block/" + texture)).texture("particle", mcLoc("block/" + texture)),
-                models().withExistingParent(block.getRegistryName().getPath() + "_bottom_hinge", modLoc("horizontal_door_bottom_rh")).texture("bottom", mcLoc("block/" + texture)).texture("particle", mcLoc("block/" + texture)),
-                models().withExistingParent(block.getRegistryName().getPath() + "_top", modLoc("horizontal_door_top")).texture("top", mcLoc("block/" + texture)).texture("particle", mcLoc("block/" + texture)),
-                models().withExistingParent(block.getRegistryName().getPath() + "_top_hinge", modLoc("horizontal_door_top_rh")).texture("top", mcLoc("block/" + texture)).texture("particle", mcLoc("block/" + texture)));
-    }
-
-    protected void horizontalBOPDoorBlock(DoorBlock block, String texture) {
-        this.doorBlock(block, models().withExistingParent(block.getRegistryName().getPath() + "_bottom", modLoc("horizontal_door_bottom")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(block.getRegistryName().getPath() + "_bottom_hinge", modLoc("horizontal_door_bottom_rh")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(block.getRegistryName().getPath() + "_top", modLoc("horizontal_door_top")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(block.getRegistryName().getPath() + "_top_hinge", modLoc("horizontal_door_top_rh")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)));
-    }
-
-    protected void horizontalDoorBlock(DoorBlock block, ResourceLocation textureLoc) {
-        this.doorBlock(block, models().withExistingParent(block.getRegistryName().getPath() + "_bottom", modLoc("horizontal_door_bottom")).texture("bottom", textureLoc).texture("particle", textureLoc),
-                models().withExistingParent(block.getRegistryName().getPath() + "_bottom_hinge", modLoc("horizontal_door_bottom_rh")).texture("bottom", textureLoc).texture("particle", textureLoc),
-                models().withExistingParent(block.getRegistryName().getPath() + "_top", modLoc("horizontal_door_top")).texture("top", textureLoc).texture("particle", textureLoc),
-                models().withExistingParent(block.getRegistryName().getPath() + "_top_hinge", modLoc("horizontal_door_top_rh")).texture("top", textureLoc).texture("particle", textureLoc));
+        this.doorBlock(block,
+                models().withExistingParent(SecretDoors.name(block) + "bottom_left", baseLoc("horizontal_door_bottom_left")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.name(block) + "bottom_left_open", baseLoc("horizontal_door_bottom_left_open")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.name(block) + "bottom_right", baseLoc("horizontal_door_bottom_right")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.name(block) + "bottom_right_open", baseLoc("horizontal_door_bottom_right_open")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.name(block) + "top_left", baseLoc("horizontal_door_top_left")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.name(block) + "top_left_open", baseLoc("horizontal_door_top_left_open")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.name(block) + "top_right", baseLoc("horizontal_door_top_right")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.name(block) + "top_right_open", baseLoc("horizontal_door_top_right_open")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)));
     }
 }

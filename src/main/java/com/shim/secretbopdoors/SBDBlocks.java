@@ -1,7 +1,5 @@
 package com.shim.secretbopdoors;
 
-import com.shim.secretdoors.SecretDoors;
-import com.shim.secretdoors.registry.SDItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -114,8 +112,6 @@ public class SBDBlocks {
     public static RegistryObject<DoorBlock> SECRET_CUT_BLACK_SANDSTONE_DOOR = registerDoorBlock("secret_cut_black_sandstone_door", "Secret Cut Black Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
     public static RegistryObject<DoorBlock> SECRET_SMOOTH_BLACK_SANDSTONE_DOOR = registerDoorBlock("secret_smooth_black_sandstone_door", "Secret Smooth Black Sandstone Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
 
-    public static RegistryObject<DoorBlock> SECRET_MUD_BRICKS_DOOR = registerDoorBlock("secret_mud_bricks_door", "Secret Mud Bricks Door", () -> new DoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
-
     public static RegistryObject<TrapDoorBlock> SECRET_FIR_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_fir_plank_trapdoor", "Secret Fir Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static RegistryObject<TrapDoorBlock> SECRET_REDWOOD_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_redwood_plank_trapdoor", "Secret Redwood Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static RegistryObject<TrapDoorBlock> SECRET_CHERRY_PLANK_TRAPDOOR = registerTrapdoorBlock("secret_cherry_plank_trapdoor", "Secret Cherry Plank Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.WOOD).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
@@ -161,7 +157,4 @@ public class SBDBlocks {
     public static RegistryObject<TrapDoorBlock> SECRET_BLACK_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_black_sandstone_trapdoor", "Secret Black Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
     public static RegistryObject<TrapDoorBlock> SECRET_CUT_BLACK_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_cut_black_sandstone_trapdoor", "Secret Cut Black Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
     public static RegistryObject<TrapDoorBlock> SECRET_SMOOTH_BLACK_SANDSTONE_TRAPDOOR = registerTrapdoorBlock("secret_smooth_black_sandstone_trapdoor", "Secret Smooth Black Sandstone Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
-
-    public static RegistryObject<TrapDoorBlock> SECRET_MUD_BRICKS_TRAPDOOR = registerTrapdoorBlock("secret_mud_bricks_trapdoor", "Secret Mud Bricks Trapdoor", () -> new TrapDoorBlock(Block.Properties.of(Material.STONE).strength(3.0F).sound(SoundType.STONE).noOcclusion()));
-
 }

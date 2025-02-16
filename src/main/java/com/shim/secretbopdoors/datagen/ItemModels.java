@@ -2,6 +2,7 @@ package com.shim.secretbopdoors.datagen;
 
 import com.shim.secretbopdoors.SBDBlocks;
 import com.shim.secretbopdoors.SecretBOPDoors;
+import com.shim.secretdoors.SecretDoors;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -87,7 +88,6 @@ public class ItemModels extends ItemModelProvider {
         generatedModel(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_DOOR.get());
         generatedModel(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_DOOR.get());
 
-        generatedModel(SBDBlocks.SECRET_MUD_BRICKS_DOOR.get());
 
         trapdoorModel(SBDBlocks.SECRET_FIR_PLANK_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_REDWOOD_PLANK_TRAPDOOR.get());
@@ -134,17 +134,14 @@ public class ItemModels extends ItemModelProvider {
         trapdoorModel(SBDBlocks.SECRET_BLACK_SANDSTONE_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_CUT_BLACK_SANDSTONE_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_TRAPDOOR.get());
-
-        trapdoorModel(SBDBlocks.SECRET_MUD_BRICKS_TRAPDOOR.get());
-        
     }
 
 
     public void generatedModel(Block item) {
-        singleTexture(item.getRegistryName().getPath(), new ResourceLocation("item/generated"), "layer0", new ResourceLocation(SecretBOPDoors.MODID, "item/" + item.getRegistryName().getPath()));
+        singleTexture(SecretDoors.name(item), new ResourceLocation("item/generated"), "layer0", new ResourceLocation(SecretBOPDoors.MODID, "item/" + SecretDoors.name(item)));
     }
 
     public void trapdoorModel(Block item) {
-        withExistingParent(item.getRegistryName().getPath(), modLoc("block/" + item.getRegistryName().getPath() + "_bottom"));
+        withExistingParent(SecretDoors.name(item), modLoc("block/" + SecretDoors.name(item) + "_bottom"));
     }
 }

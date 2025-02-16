@@ -15,8 +15,8 @@ public class LootTables extends BaseLootTableProvider {
     @Override
     protected void addTables() {
 
-        for (RegistryObject<? extends Block> block : SBDBlocks.DOOR_LOOT_TABLE) lootTables.put(block.get(), createSimpleDoorTable(block.get()));
-        for (RegistryObject<? extends Block> block : SBDBlocks.TRAPDOOR_LOOT_TABLE) lootTables.put(block.get(), createSimplerTable(block.get()));
+        for (RegistryObject<? extends Block> block : SBDBlocks.DOOR_LOOT_TABLE) lootTables.put(block.get(), createDoorTable(block.get()));
+        for (RegistryObject<? extends Block> block : SBDBlocks.TRAPDOOR_LOOT_TABLE) lootTables.put(block.get(), createSimpleTable(block.get()));
 
     }
 }
