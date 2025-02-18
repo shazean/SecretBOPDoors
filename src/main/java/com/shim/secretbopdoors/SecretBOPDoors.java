@@ -1,5 +1,6 @@
 package com.shim.secretbopdoors;
 
+import com.shim.secretdoors.registry.SDBlocks;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +21,7 @@ public class SecretBOPDoors {
 
         SBDBlocks.BLOCKS.register(modEventBus);
         SBDBlocks.ITEMS.register(modEventBus);
+        modEventBus.addListener(SBDBlocks::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

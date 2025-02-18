@@ -4,7 +4,7 @@ import biomesoplenty.core.BiomesOPlenty;
 import com.shim.secretbopdoors.SBDBlocks;
 import com.shim.secretbopdoors.SecretBOPDoors;
 import com.shim.secretdoors.SecretDoors;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
@@ -13,9 +13,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class BlockStates extends BlockStateProvider {
 
-
-    public BlockStates(DataGenerator gen, ExistingFileHelper exFileHelper) {
-        super(gen, SecretBOPDoors.MODID, exFileHelper);
+    public BlockStates(PackOutput output, ExistingFileHelper helper) {
+        super(output, SecretBOPDoors.MODID, helper);
     }
 
     @Override
@@ -24,7 +23,6 @@ public class BlockStates extends BlockStateProvider {
 
         secretDoorBlock(SBDBlocks.SECRET_FIR_PLANK_DOOR.get(), "fir_planks");
         secretDoorBlock(SBDBlocks.SECRET_REDWOOD_PLANK_DOOR.get(), "redwood_planks");
-        secretDoorBlock(SBDBlocks.SECRET_CHERRY_PLANK_DOOR.get(), "cherry_planks");
         secretDoorBlock(SBDBlocks.SECRET_MAHOGANY_PLANK_DOOR.get(), "mahogany_planks");
         secretDoorBlock(SBDBlocks.SECRET_JACARANDA_PLANK_DOOR.get(), "jacaranda_planks");
         secretDoorBlock(SBDBlocks.SECRET_PALM_PLANK_DOOR.get(), "palm_planks");
@@ -36,7 +34,6 @@ public class BlockStates extends BlockStateProvider {
 
         secretDoorBlock(SBDBlocks.SECRET_FIR_LOG_DOOR.get(), "fir_log");
         secretDoorBlock(SBDBlocks.SECRET_REDWOOD_LOG_DOOR.get(), "redwood_log");
-        secretDoorBlock(SBDBlocks.SECRET_CHERRY_LOG_DOOR.get(), "cherry_log");
         secretDoorBlock(SBDBlocks.SECRET_MAHOGANY_LOG_DOOR.get(), "mahogany_log");
         secretDoorBlock(SBDBlocks.SECRET_JACARANDA_LOG_DOOR.get(), "jacaranda_log");
         secretDoorBlock(SBDBlocks.SECRET_PALM_LOG_DOOR.get(), "palm_log");
@@ -48,7 +45,6 @@ public class BlockStates extends BlockStateProvider {
 
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_FIR_LOG_DOOR.get(), "stripped_fir_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_DOOR.get(), "stripped_redwood_log");
-        secretDoorBlock(SBDBlocks.SECRET_STRIPPED_CHERRY_LOG_DOOR.get(), "stripped_cherry_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_MAHOGANY_LOG_DOOR.get(), "stripped_mahogany_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_JACARANDA_LOG_DOOR.get(), "stripped_jacaranda_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_PALM_LOG_DOOR.get(), "stripped_palm_log");
@@ -60,7 +56,6 @@ public class BlockStates extends BlockStateProvider {
 
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR.get(), "stripped_fir_log");
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "stripped_redwood_log");
-        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_CHERRY_LOG_DOOR.get(), "stripped_cherry_log");
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAHOGANY_LOG_DOOR.get(), "stripped_mahogany_log");
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_JACARANDA_LOG_DOOR.get(), "stripped_jacaranda_log");
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_PALM_LOG_DOOR.get(), "stripped_palm_log");
@@ -72,7 +67,6 @@ public class BlockStates extends BlockStateProvider {
 
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_FIR_LOG_DOOR.get(), "fir_log");
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "redwood_log");
-        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_CHERRY_LOG_DOOR.get(), "cherry_log");
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_MAHOGANY_LOG_DOOR.get(), "mahogany_log");
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_JACARANDA_LOG_DOOR.get(), "jacaranda_log");
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_PALM_LOG_DOOR.get(), "palm_log");
@@ -95,7 +89,6 @@ public class BlockStates extends BlockStateProvider {
 
         secretTrapdoorBlock(SBDBlocks.SECRET_FIR_PLANK_TRAPDOOR.get(), "fir_planks");
         secretTrapdoorBlock(SBDBlocks.SECRET_REDWOOD_PLANK_TRAPDOOR.get(), "redwood_planks");
-        secretTrapdoorBlock(SBDBlocks.SECRET_CHERRY_PLANK_TRAPDOOR.get(), "cherry_planks");
         secretTrapdoorBlock(SBDBlocks.SECRET_MAHOGANY_PLANK_TRAPDOOR.get(), "mahogany_planks");
         secretTrapdoorBlock(SBDBlocks.SECRET_JACARANDA_PLANK_TRAPDOOR.get(), "jacaranda_planks");
         secretTrapdoorBlock(SBDBlocks.SECRET_PALM_PLANK_TRAPDOOR.get(), "palm_planks");
@@ -107,7 +100,6 @@ public class BlockStates extends BlockStateProvider {
 
         secretTrapdoorBlock(SBDBlocks.SECRET_FIR_LOG_TRAPDOOR.get(), "fir_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_REDWOOD_LOG_TRAPDOOR.get(), "redwood_log");
-        secretTrapdoorBlock(SBDBlocks.SECRET_CHERRY_LOG_TRAPDOOR.get(), "cherry_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_MAHOGANY_LOG_TRAPDOOR.get(), "mahogany_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_JACARANDA_LOG_TRAPDOOR.get(), "jacaranda_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_PALM_LOG_TRAPDOOR.get(), "palm_log");
@@ -119,7 +111,6 @@ public class BlockStates extends BlockStateProvider {
 
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_FIR_LOG_TRAPDOOR.get(), "stripped_fir_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_TRAPDOOR.get(), "stripped_redwood_log");
-        secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_CHERRY_LOG_TRAPDOOR.get(), "stripped_cherry_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_MAHOGANY_LOG_TRAPDOOR.get(), "stripped_mahogany_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_JACARANDA_LOG_TRAPDOOR.get(), "stripped_jacaranda_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_PALM_LOG_TRAPDOOR.get(), "stripped_palm_log");
@@ -159,13 +150,13 @@ public class BlockStates extends BlockStateProvider {
 
     protected void horizontalDoorBlock(DoorBlock block, String texture) {
         this.doorBlock(block,
-                models().withExistingParent(SecretDoors.name(block) + "bottom_left", baseLoc("horizontal_door_bottom_left")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(SecretDoors.name(block) + "bottom_left_open", baseLoc("horizontal_door_bottom_left_open")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(SecretDoors.name(block) + "bottom_right", baseLoc("horizontal_door_bottom_right")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(SecretDoors.name(block) + "bottom_right_open", baseLoc("horizontal_door_bottom_right_open")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(SecretDoors.name(block) + "top_left", baseLoc("horizontal_door_top_left")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(SecretDoors.name(block) + "top_left_open", baseLoc("horizontal_door_top_left_open")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(SecretDoors.name(block) + "top_right", baseLoc("horizontal_door_top_right")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
-                models().withExistingParent(SecretDoors.name(block) + "top_right_open", baseLoc("horizontal_door_top_right_open")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)));
+                models().withExistingParent(SecretDoors.key(block) + "bottom_left", baseLoc("horizontal_door_bottom_left")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.key(block) + "bottom_left_open", baseLoc("horizontal_door_bottom_left_open")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.key(block) + "bottom_right", baseLoc("horizontal_door_bottom_right")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.key(block) + "bottom_right_open", baseLoc("horizontal_door_bottom_right_open")).texture("bottom", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.key(block) + "top_left", baseLoc("horizontal_door_top_left")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.key(block) + "top_left_open", baseLoc("horizontal_door_top_left_open")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.key(block) + "top_right", baseLoc("horizontal_door_top_right")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)),
+                models().withExistingParent(SecretDoors.key(block) + "top_right_open", baseLoc("horizontal_door_top_right_open")).texture("top", bopLoc("block/" + texture)).texture("particle", bopLoc("block/" + texture)));
     }
 }

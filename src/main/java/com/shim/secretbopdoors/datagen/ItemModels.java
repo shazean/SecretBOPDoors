@@ -4,15 +4,16 @@ import com.shim.secretbopdoors.SBDBlocks;
 import com.shim.secretbopdoors.SecretBOPDoors;
 import com.shim.secretdoors.SecretDoors;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ItemModels extends ItemModelProvider {
-    
-    public ItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, SecretBOPDoors.MODID, existingFileHelper);
+
+    public ItemModels(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, SecretBOPDoors.MODID, existingFileHelper);
     }
 
     @Override
@@ -20,7 +21,6 @@ public class ItemModels extends ItemModelProvider {
 
         generatedModel(SBDBlocks.SECRET_FIR_PLANK_DOOR.get());
         generatedModel(SBDBlocks.SECRET_REDWOOD_PLANK_DOOR.get());
-        generatedModel(SBDBlocks.SECRET_CHERRY_PLANK_DOOR.get());
         generatedModel(SBDBlocks.SECRET_MAHOGANY_PLANK_DOOR.get());
         generatedModel(SBDBlocks.SECRET_JACARANDA_PLANK_DOOR.get());
         generatedModel(SBDBlocks.SECRET_PALM_PLANK_DOOR.get());
@@ -32,7 +32,6 @@ public class ItemModels extends ItemModelProvider {
 
         generatedModel(SBDBlocks.SECRET_FIR_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_REDWOOD_LOG_DOOR.get());
-        generatedModel(SBDBlocks.SECRET_CHERRY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_MAHOGANY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_JACARANDA_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_PALM_LOG_DOOR.get());
@@ -44,7 +43,6 @@ public class ItemModels extends ItemModelProvider {
 
         generatedModel(SBDBlocks.SECRET_STRIPPED_FIR_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_DOOR.get());
-        generatedModel(SBDBlocks.SECRET_STRIPPED_CHERRY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_MAHOGANY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_JACARANDA_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_PALM_LOG_DOOR.get());
@@ -56,7 +54,6 @@ public class ItemModels extends ItemModelProvider {
 
         generatedModel(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR.get());
-        generatedModel(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_CHERRY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAHOGANY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_JACARANDA_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_PALM_LOG_DOOR.get());
@@ -68,7 +65,6 @@ public class ItemModels extends ItemModelProvider {
 
         generatedModel(SBDBlocks.SECRET_HORIZONTAL_FIR_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_HORIZONTAL_REDWOOD_LOG_DOOR.get());
-        generatedModel(SBDBlocks.SECRET_HORIZONTAL_CHERRY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_HORIZONTAL_MAHOGANY_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_HORIZONTAL_JACARANDA_LOG_DOOR.get());
         generatedModel(SBDBlocks.SECRET_HORIZONTAL_PALM_LOG_DOOR.get());
@@ -91,7 +87,6 @@ public class ItemModels extends ItemModelProvider {
 
         trapdoorModel(SBDBlocks.SECRET_FIR_PLANK_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_REDWOOD_PLANK_TRAPDOOR.get());
-        trapdoorModel(SBDBlocks.SECRET_CHERRY_PLANK_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_MAHOGANY_PLANK_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_JACARANDA_PLANK_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_PALM_PLANK_TRAPDOOR.get());
@@ -103,7 +98,6 @@ public class ItemModels extends ItemModelProvider {
 
         trapdoorModel(SBDBlocks.SECRET_FIR_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_REDWOOD_LOG_TRAPDOOR.get());
-        trapdoorModel(SBDBlocks.SECRET_CHERRY_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_MAHOGANY_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_JACARANDA_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_PALM_LOG_TRAPDOOR.get());
@@ -115,7 +109,6 @@ public class ItemModels extends ItemModelProvider {
 
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_FIR_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_TRAPDOOR.get());
-        trapdoorModel(SBDBlocks.SECRET_STRIPPED_CHERRY_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_MAHOGANY_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_JACARANDA_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_PALM_LOG_TRAPDOOR.get());
@@ -136,12 +129,11 @@ public class ItemModels extends ItemModelProvider {
         trapdoorModel(SBDBlocks.SECRET_SMOOTH_BLACK_SANDSTONE_TRAPDOOR.get());
     }
 
-
     public void generatedModel(Block item) {
-        singleTexture(SecretDoors.name(item), new ResourceLocation("item/generated"), "layer0", new ResourceLocation(SecretBOPDoors.MODID, "item/" + SecretDoors.name(item)));
+        singleTexture(SecretDoors.key(item), new ResourceLocation("item/generated"), "layer0", new ResourceLocation(SecretBOPDoors.MODID, "item/" + SecretDoors.key(item)));
     }
 
     public void trapdoorModel(Block item) {
-        withExistingParent(SecretDoors.name(item), modLoc("block/" + SecretDoors.name(item) + "_bottom"));
+        withExistingParent(SecretDoors.key(item), modLoc("block/" + SecretDoors.key(item) + "_bottom"));
     }
 }

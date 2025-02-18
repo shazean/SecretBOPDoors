@@ -1,22 +1,48 @@
 package com.shim.secretbopdoors.datagen;
 
 import com.shim.secretbopdoors.SBDBlocks;
-import com.shim.secretdoors.datagen.BaseLootTableProvider;
-import net.minecraft.data.DataGenerator;
+import com.shim.secretbopdoors.SecretBOPDoors;
+import com.shim.secretdoors.SecretDoors;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
+import net.minecraft.data.loot.packs.VanillaBlockLoot;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class LootTables extends BaseLootTableProvider {
+import java.util.Map;
+import java.util.stream.Collectors;
 
-    public LootTables(DataGenerator dataGeneratorIn) {
-        super(dataGeneratorIn);
+public class LootTables extends VanillaBlockLoot {
+
+    @Override
+    protected void generate() {
+        for (RegistryObject<? extends Block> block : SBDBlocks.DOOR_LOOT_TABLE) createSecretDoor(block.get());
+        for (RegistryObject<? extends Block> block : SBDBlocks.TRAPDOOR_LOOT_TABLE) dropSelf(block.get());
     }
 
     @Override
-    protected void addTables() {
+    protected Iterable<Block> getKnownBlocks() {
+        return ForgeRegistries.BLOCKS.getEntries().stream()
+                .filter(e -> e.getKey().location().getNamespace().equals(SecretBOPDoors.MODID))
+                .map(Map.Entry::getValue)
+                .collect(Collectors.toList());
+    }
 
-        for (RegistryObject<? extends Block> block : SBDBlocks.DOOR_LOOT_TABLE) lootTables.put(block.get(), createDoorTable(block.get()));
-        for (RegistryObject<? extends Block> block : SBDBlocks.TRAPDOOR_LOOT_TABLE) lootTables.put(block.get(), createSimpleTable(block.get()));
-
+    private void createSecretDoor(Block block) {
+        LootTable.Builder builder = LootTable.lootTable().withPool(this.applyExplosionCondition(block,
+                LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(block)
+                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                .hasProperty(DoorBlock.HALF, DoubleBlockHalf.LOWER))))));
+        add(block, builder);
     }
 }

@@ -2,21 +2,24 @@ package com.shim.secretbopdoors.datagen;
 
 import com.shim.secretbopdoors.SecretBOPDoors;
 import com.shim.secretdoors.registry.SDTags;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+
+import java.util.concurrent.CompletableFuture;
 
 public class SBDItemTags extends ItemTagsProvider {
 
-    public SBDItemTags(DataGenerator generator, BlockTagsProvider blockTags, ExistingFileHelper helper) {
-        super(generator, blockTags, SecretBOPDoors.MODID, helper);
+    public SBDItemTags(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, BlockTagsProvider blockTags, ExistingFileHelper helper) {
+        super(packOutput, lookupProvider, blockTags.contentsGetter(), SecretBOPDoors.MODID, helper);
     }
 
     @Override
-    protected void addTags() {
+    protected void addTags(HolderLookup.Provider provider) {
 
         this.copy(SDTags.Blocks.SECRET_WOODEN_PLANK_DOORS, SDTags.Items.SECRET_WOODEN_PLANK_DOORS);
         this.copy(SDTags.Blocks.SECRET_WOODEN_PLANK_TRAPDOORS, SDTags.Items.SECRET_WOODEN_PLANK_TRAPDOORS);
