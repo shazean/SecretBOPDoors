@@ -1,48 +1,29 @@
 package com.shim.secretbopdoors.datagen;
 
 import com.shim.secretbopdoors.SBDBlocks;
-import com.shim.secretbopdoors.SecretBOPDoors;
-import com.shim.secretdoors.SecretDoors;
-import net.minecraft.advancements.critereon.StatePropertiesPredicate;
-import net.minecraft.data.loot.packs.VanillaBlockLoot;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DoorBlock;
-import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.minecraft.world.level.storage.loot.LootPool;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.Set;
 
-public class LootTables extends VanillaBlockLoot {
+public class LootTables extends BlockLootSubProvider {
+    protected LootTables(HolderLookup.Provider registries) {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
+    }
 
     @Override
     protected void generate() {
-        for (RegistryObject<? extends Block> block : SBDBlocks.DOOR_LOOT_TABLE) createSecretDoor(block.get());
-        for (RegistryObject<? extends Block> block : SBDBlocks.TRAPDOOR_LOOT_TABLE) dropSelf(block.get());
+
+        for (DeferredBlock<? extends Block> block : SBDBlocks.DOOR_LOOT_TABLE) this.add(block.get(), createDoorTable(block.get()));
+        for (DeferredBlock<? extends Block> block : SBDBlocks.TRAPDOOR_LOOT_TABLE) dropSelf(block.get());
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ForgeRegistries.BLOCKS.getEntries().stream()
-                .filter(e -> e.getKey().location().getNamespace().equals(SecretBOPDoors.MODID))
-                .map(Map.Entry::getValue)
-                .collect(Collectors.toList());
-    }
-
-    private void createSecretDoor(Block block) {
-        LootTable.Builder builder = LootTable.lootTable().withPool(this.applyExplosionCondition(block,
-                LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(block)
-                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                        .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                .hasProperty(DoorBlock.HALF, DoubleBlockHalf.LOWER))))));
-        add(block, builder);
+        return SBDBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
 }

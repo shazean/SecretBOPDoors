@@ -8,8 +8,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 public class BlockStates extends BlockStateProvider {
 
@@ -132,20 +132,20 @@ public class BlockStates extends BlockStateProvider {
     }
     
     public void secretDoorBlock(DoorBlock block, String texture) {
-        doorBlock(block, new ResourceLocation(BiomesOPlenty.MOD_ID, "block/" + texture), new ResourceLocation(BiomesOPlenty.MOD_ID, "block/" + texture));
+        doorBlock(block, bopLoc("block/" + texture), bopLoc("block/" + texture));
     }
 
 
     public void secretTrapdoorBlock(TrapDoorBlock block, String texture) {
-        trapdoorBlock(block, new ResourceLocation(BiomesOPlenty.MOD_ID, "block/" + texture), true);
+        trapdoorBlock(block, bopLoc("block/" + texture), true);
     }
 
     public ResourceLocation bopLoc(String name) {
-        return new ResourceLocation(BiomesOPlenty.MOD_ID, name);
+        return ResourceLocation.fromNamespaceAndPath(BiomesOPlenty.MOD_ID, name);
     }
 
     public ResourceLocation baseLoc(String name) {
-        return new ResourceLocation(SecretDoors.MODID, name);
+        return ResourceLocation.fromNamespaceAndPath(SecretDoors.MODID, name);
     }
 
     protected void horizontalDoorBlock(DoorBlock block, String texture) {

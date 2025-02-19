@@ -1,28 +1,20 @@
 package com.shim.secretbopdoors;
 
-import com.shim.secretdoors.registry.SDBlocks;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("secretbopdoors")
+@Mod(SecretBOPDoors.MODID)
 public class SecretBOPDoors {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "secretbopdoors";
 
-    public SecretBOPDoors() {
-        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public SecretBOPDoors(IEventBus modEventBus) {
 
         SBDBlocks.BLOCKS.register(modEventBus);
         SBDBlocks.ITEMS.register(modEventBus);
-        modEventBus.addListener(SBDBlocks::addCreative);
 
-        MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(SBDBlocks::addCreative);
     }
 }
