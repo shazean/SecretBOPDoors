@@ -35,6 +35,9 @@ public class SBDRecipes extends RecipeProvider implements IConditionBuilder {
         woodenDoor(SBDBlocks.SECRET_MAGIC_PLANK_DOOR.get(), BOPBlocks.MAGIC_PLANKS, output);
         woodenDoor(SBDBlocks.SECRET_UMBRAN_PLANK_DOOR.get(), BOPBlocks.UMBRAN_PLANKS, output);
         woodenDoor(SBDBlocks.SECRET_HELLBARK_PLANK_DOOR.get(), BOPBlocks.HELLBARK_PLANKS, output);
+        woodenDoor(SBDBlocks.SECRET_EMPYREAL_PLANK_DOOR.get(), BOPBlocks.EMPYREAL_PLANKS, output);
+        woodenDoor(SBDBlocks.SECRET_MAPLE_PLANK_DOOR.get(), BOPBlocks.MAPLE_PLANKS, output);
+        woodenDoor(SBDBlocks.SECRET_PINE_PLANK_DOOR.get(), BOPBlocks.PINE_PLANKS, output);
 
         verticalAndHorizontalDoor(SBDBlocks.SECRET_FIR_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_FIR_LOG_DOOR.get(), BOPBlocks.FIR_LOG, output);
         verticalAndHorizontalDoor(SBDBlocks.SECRET_REDWOOD_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_REDWOOD_LOG_DOOR.get(), BOPBlocks.REDWOOD_LOG, output);
@@ -46,6 +49,9 @@ public class SBDRecipes extends RecipeProvider implements IConditionBuilder {
         verticalAndHorizontalDoor(SBDBlocks.SECRET_MAGIC_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_MAGIC_LOG_DOOR.get(), BOPBlocks.MAGIC_LOG, output);
         verticalAndHorizontalDoor(SBDBlocks.SECRET_UMBRAN_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_UMBRAN_LOG_DOOR.get(), BOPBlocks.UMBRAN_LOG, output);
         verticalAndHorizontalDoor(SBDBlocks.SECRET_HELLBARK_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_HELLBARK_LOG_DOOR.get(), BOPBlocks.HELLBARK_LOG, output);
+        verticalAndHorizontalDoor(SBDBlocks.SECRET_EMPYREAL_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_EMPYREAL_LOG_DOOR.get(), BOPBlocks.EMPYREAL_LOG, output);
+        verticalAndHorizontalDoor(SBDBlocks.SECRET_MAPLE_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_MAPLE_LOG_DOOR.get(), BOPBlocks.MAPLE_LOG, output);
+        verticalAndHorizontalDoor(SBDBlocks.SECRET_PINE_LOG_DOOR.get(), SBDBlocks.SECRET_HORIZONTAL_PINE_LOG_DOOR.get(), BOPBlocks.PINE_LOG, output);
 
         verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_FIR_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR.get(), BOPBlocks.STRIPPED_FIR_LOG, output);
         verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR.get(), BOPBlocks.STRIPPED_REDWOOD_LOG, output);
@@ -57,7 +63,10 @@ public class SBDRecipes extends RecipeProvider implements IConditionBuilder {
         verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_MAGIC_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAGIC_LOG_DOOR.get(), BOPBlocks.STRIPPED_MAGIC_LOG, output);
         verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_UMBRAN_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_UMBRAN_LOG_DOOR.get(), BOPBlocks.STRIPPED_UMBRAN_LOG, output);
         verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_HELLBARK_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_HELLBARK_LOG_DOOR.get(), BOPBlocks.STRIPPED_HELLBARK_LOG, output);
-        
+        verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_EMPYREAL_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_EMPYREAL_LOG_DOOR.get(), BOPBlocks.STRIPPED_EMPYREAL_LOG, output);
+        verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_MAPLE_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAPLE_LOG_DOOR.get(), BOPBlocks.STRIPPED_MAPLE_LOG, output);
+        verticalAndHorizontalDoor(SBDBlocks.SECRET_STRIPPED_PINE_LOG_DOOR.get(), SBDBlocks.SECRET_STRIPPED_HORIZONTAL_PINE_LOG_DOOR.get(), BOPBlocks.STRIPPED_PINE_LOG, output);
+
 
         door(SBDBlocks.SECRET_WHITE_SANDSTONE_DOOR.get(), BOPBlocks.WHITE_SANDSTONE, output);
         door(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_DOOR.get(), BOPBlocks.CUT_WHITE_SANDSTONE, output);
@@ -79,6 +88,9 @@ public class SBDRecipes extends RecipeProvider implements IConditionBuilder {
         woodenTrapdoor(SBDBlocks.SECRET_MAGIC_PLANK_TRAPDOOR.get(), BOPBlocks.MAGIC_PLANKS, output);
         woodenTrapdoor(SBDBlocks.SECRET_UMBRAN_PLANK_TRAPDOOR.get(), BOPBlocks.UMBRAN_PLANKS, output);
         woodenTrapdoor(SBDBlocks.SECRET_HELLBARK_PLANK_TRAPDOOR.get(), BOPBlocks.HELLBARK_PLANKS, output);
+        woodenTrapdoor(SBDBlocks.SECRET_EMPYREAL_PLANK_TRAPDOOR.get(), BOPBlocks.EMPYREAL_PLANKS, output);
+        woodenTrapdoor(SBDBlocks.SECRET_MAPLE_PLANK_TRAPDOOR.get(), BOPBlocks.MAPLE_PLANKS, output);
+        woodenTrapdoor(SBDBlocks.SECRET_PINE_PLANK_TRAPDOOR.get(), BOPBlocks.PINE_PLANKS, output);
 
         woodenTrapdoor(SBDBlocks.SECRET_FIR_LOG_TRAPDOOR.get(), BOPBlocks.FIR_LOG, output);
         woodenTrapdoor(SBDBlocks.SECRET_REDWOOD_LOG_TRAPDOOR.get(), BOPBlocks.REDWOOD_LOG, output);
@@ -90,6 +102,9 @@ public class SBDRecipes extends RecipeProvider implements IConditionBuilder {
         woodenTrapdoor(SBDBlocks.SECRET_MAGIC_LOG_TRAPDOOR.get(), BOPBlocks.MAGIC_LOG, output);
         woodenTrapdoor(SBDBlocks.SECRET_UMBRAN_LOG_TRAPDOOR.get(), BOPBlocks.UMBRAN_LOG, output);
         woodenTrapdoor(SBDBlocks.SECRET_HELLBARK_LOG_TRAPDOOR.get(), BOPBlocks.HELLBARK_LOG, output);
+        woodenTrapdoor(SBDBlocks.SECRET_EMPYREAL_LOG_TRAPDOOR.get(), BOPBlocks.EMPYREAL_LOG, output);
+        woodenTrapdoor(SBDBlocks.SECRET_MAPLE_LOG_TRAPDOOR.get(), BOPBlocks.MAPLE_LOG, output);
+        woodenTrapdoor(SBDBlocks.SECRET_PINE_LOG_TRAPDOOR.get(), BOPBlocks.PINE_LOG, output);
 
         woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_FIR_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_FIR_LOG, output);
         woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_REDWOOD_LOG, output);
@@ -101,7 +116,10 @@ public class SBDRecipes extends RecipeProvider implements IConditionBuilder {
         woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_MAGIC_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_MAGIC_LOG, output);
         woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_UMBRAN_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_UMBRAN_LOG, output);
         woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_HELLBARK_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_HELLBARK_LOG, output);
-        
+        woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_EMPYREAL_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_EMPYREAL_LOG, output);
+        woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_MAPLE_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_MAPLE_LOG, output);
+        woodenTrapdoor(SBDBlocks.SECRET_STRIPPED_PINE_LOG_TRAPDOOR.get(), BOPBlocks.STRIPPED_PINE_LOG, output);
+
         trapdoor(SBDBlocks.SECRET_WHITE_SANDSTONE_TRAPDOOR.get(), BOPBlocks.WHITE_SANDSTONE, output);
         trapdoor(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_TRAPDOOR.get(), BOPBlocks.CUT_WHITE_SANDSTONE, output);
         trapdoor(SBDBlocks.SECRET_SMOOTH_WHITE_SANDSTONE_TRAPDOOR.get(), BOPBlocks.SMOOTH_WHITE_SANDSTONE, output);

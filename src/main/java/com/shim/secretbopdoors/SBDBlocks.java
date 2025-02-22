@@ -43,7 +43,10 @@ public class SBDBlocks {
         DEAD("dead", "Dead"),
         MAGIC("magic", "Magic"),
         UMBRAN("umbran", "Umbran"),
-        HELLBARK("hellbark", "Hellbark");
+        HELLBARK("hellbark", "Hellbark"),
+        EMPYREAL("empyreal", "Empyreal"),
+        MAPLE("maple", "Maple"),
+        PINE("pine", "Pine");
 
         final String name;
         final String localization;
@@ -64,6 +67,9 @@ public class SBDBlocks {
     public static DeferredBlock<DoorBlock> SECRET_MAGIC_PLANK_DOOR = registerPlankDoorBlock(BOPWoodType.MAGIC, () -> doorBlock(BOPBlocks.MAGIC_PLANKS, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<DoorBlock> SECRET_UMBRAN_PLANK_DOOR = registerPlankDoorBlock(BOPWoodType.UMBRAN, () -> doorBlock(BOPBlocks.UMBRAN_PLANKS, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<DoorBlock> SECRET_HELLBARK_PLANK_DOOR = registerPlankDoorBlock(BOPWoodType.HELLBARK, () -> doorBlock(BOPBlocks.HELLBARK_PLANKS, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<DoorBlock> SECRET_EMPYREAL_PLANK_DOOR = registerPlankDoorBlock(BOPWoodType.EMPYREAL, () -> doorBlock(BOPBlocks.EMPYREAL_PLANKS, BOPBlockSetTypes.EMPYREAL));
+    public static DeferredBlock<DoorBlock> SECRET_MAPLE_PLANK_DOOR = registerPlankDoorBlock(BOPWoodType.MAPLE, () -> doorBlock(BOPBlocks.MAPLE_PLANKS, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<DoorBlock> SECRET_PINE_PLANK_DOOR = registerPlankDoorBlock(BOPWoodType.PINE, () -> doorBlock(BOPBlocks.PINE_PLANKS, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<DoorBlock> SECRET_FIR_LOG_DOOR = registerLogDoorBlock(BOPWoodType.FIR, () -> doorBlock(BOPBlocks.FIR_LOG, BOPBlockSetTypes.FIR));
     public static DeferredBlock<DoorBlock> SECRET_REDWOOD_LOG_DOOR = registerLogDoorBlock(BOPWoodType.REDWOOD, () -> doorBlock(BOPBlocks.REDWOOD_LOG, BOPBlockSetTypes.REDWOOD));
@@ -75,6 +81,9 @@ public class SBDBlocks {
     public static DeferredBlock<DoorBlock> SECRET_MAGIC_LOG_DOOR = registerLogDoorBlock(BOPWoodType.MAGIC, () -> doorBlock(BOPBlocks.MAGIC_LOG, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<DoorBlock> SECRET_UMBRAN_LOG_DOOR = registerLogDoorBlock(BOPWoodType.UMBRAN, () -> doorBlock(BOPBlocks.UMBRAN_LOG, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<DoorBlock> SECRET_HELLBARK_LOG_DOOR = registerLogDoorBlock(BOPWoodType.HELLBARK, () -> doorBlock(BOPBlocks.HELLBARK_LOG, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<DoorBlock> SECRET_EMPYREAL_LOG_DOOR = registerLogDoorBlock(BOPWoodType.EMPYREAL, () -> doorBlock(BOPBlocks.EMPYREAL_LOG, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<DoorBlock> SECRET_MAPLE_LOG_DOOR = registerLogDoorBlock(BOPWoodType.MAPLE, () -> doorBlock(BOPBlocks.MAPLE_LOG, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<DoorBlock> SECRET_PINE_LOG_DOOR = registerLogDoorBlock(BOPWoodType.PINE, () -> doorBlock(BOPBlocks.PINE_LOG, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_FIR_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.FIR, () -> doorBlock(BOPBlocks.STRIPPED_FIR_LOG, BOPBlockSetTypes.FIR));
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_REDWOOD_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.REDWOOD, () -> doorBlock(BOPBlocks.STRIPPED_REDWOOD_LOG, BOPBlockSetTypes.REDWOOD));
@@ -86,6 +95,9 @@ public class SBDBlocks {
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_MAGIC_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.MAGIC, () -> doorBlock(BOPBlocks.STRIPPED_MAGIC_LOG, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_UMBRAN_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.UMBRAN, () -> doorBlock(BOPBlocks.STRIPPED_UMBRAN_LOG, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HELLBARK_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.HELLBARK, () -> doorBlock(BOPBlocks.STRIPPED_HELLBARK_LOG, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<DoorBlock> SECRET_STRIPPED_EMPYREAL_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.EMPYREAL, () -> doorBlock(BOPBlocks.STRIPPED_EMPYREAL_LOG, BOPBlockSetTypes.EMPYREAL));
+    public static DeferredBlock<DoorBlock> SECRET_STRIPPED_MAPLE_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.MAPLE, () -> doorBlock(BOPBlocks.STRIPPED_MAPLE_LOG, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<DoorBlock> SECRET_STRIPPED_PINE_LOG_DOOR = registerStrippedLogDoorBlock(BOPWoodType.PINE, () -> doorBlock(BOPBlocks.STRIPPED_PINE_LOG, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.FIR, () -> doorBlock(BOPBlocks.STRIPPED_FIR_LOG, BOPBlockSetTypes.FIR));
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.REDWOOD, () -> doorBlock(BOPBlocks.STRIPPED_REDWOOD_LOG, BOPBlockSetTypes.REDWOOD));
@@ -97,6 +109,9 @@ public class SBDBlocks {
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_MAGIC_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.MAGIC, () -> doorBlock(BOPBlocks.STRIPPED_MAGIC_LOG, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_UMBRAN_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.UMBRAN, () -> doorBlock(BOPBlocks.STRIPPED_UMBRAN_LOG, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_HELLBARK_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.HELLBARK, () -> doorBlock(BOPBlocks.STRIPPED_HELLBARK_LOG, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_EMPYREAL_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.EMPYREAL, () -> doorBlock(BOPBlocks.STRIPPED_EMPYREAL_LOG, BOPBlockSetTypes.EMPYREAL));
+    public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_MAPLE_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.MAPLE, () -> doorBlock(BOPBlocks.STRIPPED_MAPLE_LOG, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<DoorBlock> SECRET_STRIPPED_HORIZONTAL_PINE_LOG_DOOR = registerStrippedHorizontalLogDoorBlock(BOPWoodType.PINE, () -> doorBlock(BOPBlocks.STRIPPED_PINE_LOG, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_FIR_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.FIR, () -> doorBlock(BOPBlocks.FIR_LOG, BOPBlockSetTypes.FIR));
     public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_REDWOOD_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.REDWOOD, () -> doorBlock(BOPBlocks.REDWOOD_LOG, BOPBlockSetTypes.REDWOOD));
@@ -108,6 +123,9 @@ public class SBDBlocks {
     public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_MAGIC_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.MAGIC, () -> doorBlock(BOPBlocks.MAGIC_LOG, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_UMBRAN_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.UMBRAN, () -> doorBlock(BOPBlocks.UMBRAN_LOG, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_HELLBARK_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.HELLBARK, () -> doorBlock(BOPBlocks.HELLBARK_LOG, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_EMPYREAL_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.EMPYREAL, () -> doorBlock(BOPBlocks.EMPYREAL_LOG, BOPBlockSetTypes.EMPYREAL));
+    public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_MAPLE_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.MAPLE, () -> doorBlock(BOPBlocks.MAPLE_LOG, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<DoorBlock> SECRET_HORIZONTAL_PINE_LOG_DOOR = registerHorizontalLogDoorBlock(BOPWoodType.PINE, () -> doorBlock(BOPBlocks.PINE_LOG, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<DoorBlock> SECRET_WHITE_SANDSTONE_DOOR = registerSandstoneDoorBlock("white", "White", () -> doorBlock(BOPBlocks.WHITE_SANDSTONE, BlockSetType.STONE));
     public static DeferredBlock<DoorBlock> SECRET_CUT_WHITE_SANDSTONE_DOOR = registerSandstoneDoorBlock("cut_white", "Cut White", () -> doorBlock(BOPBlocks.CUT_WHITE_SANDSTONE, BlockSetType.STONE));
@@ -130,6 +148,9 @@ public class SBDBlocks {
     public static DeferredBlock<TrapDoorBlock> SECRET_MAGIC_PLANK_TRAPDOOR = registerPlankTrapdoorBlock(BOPWoodType.MAGIC, () -> trapDoorBlock(BOPBlocks.MAGIC_PLANKS, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<TrapDoorBlock> SECRET_UMBRAN_PLANK_TRAPDOOR = registerPlankTrapdoorBlock(BOPWoodType.UMBRAN, () -> trapDoorBlock(BOPBlocks.UMBRAN_PLANKS, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<TrapDoorBlock> SECRET_HELLBARK_PLANK_TRAPDOOR = registerPlankTrapdoorBlock(BOPWoodType.HELLBARK, () -> trapDoorBlock(BOPBlocks.HELLBARK_PLANKS, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<TrapDoorBlock> SECRET_EMPYREAL_PLANK_TRAPDOOR = registerPlankTrapdoorBlock(BOPWoodType.EMPYREAL, () -> trapDoorBlock(BOPBlocks.EMPYREAL_PLANKS, BOPBlockSetTypes.EMPYREAL));
+    public static DeferredBlock<TrapDoorBlock> SECRET_MAPLE_PLANK_TRAPDOOR = registerPlankTrapdoorBlock(BOPWoodType.MAPLE, () -> trapDoorBlock(BOPBlocks.MAPLE_PLANKS, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<TrapDoorBlock> SECRET_PINE_PLANK_TRAPDOOR = registerPlankTrapdoorBlock(BOPWoodType.PINE, () -> trapDoorBlock(BOPBlocks.PINE_PLANKS, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<TrapDoorBlock> SECRET_FIR_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.FIR, () -> trapDoorBlock(BOPBlocks.FIR_LOG, BOPBlockSetTypes.FIR));
     public static DeferredBlock<TrapDoorBlock> SECRET_REDWOOD_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.REDWOOD, () -> trapDoorBlock(BOPBlocks.REDWOOD_LOG, BOPBlockSetTypes.REDWOOD));
@@ -141,6 +162,9 @@ public class SBDBlocks {
     public static DeferredBlock<TrapDoorBlock> SECRET_MAGIC_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.MAGIC, () -> trapDoorBlock(BOPBlocks.MAGIC_LOG, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<TrapDoorBlock> SECRET_UMBRAN_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.UMBRAN, () -> trapDoorBlock(BOPBlocks.UMBRAN_LOG, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<TrapDoorBlock> SECRET_HELLBARK_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.HELLBARK, () -> trapDoorBlock(BOPBlocks.HELLBARK_LOG, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<TrapDoorBlock> SECRET_EMPYREAL_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.EMPYREAL, () -> trapDoorBlock(BOPBlocks.EMPYREAL_LOG, BOPBlockSetTypes.EMPYREAL));
+    public static DeferredBlock<TrapDoorBlock> SECRET_MAPLE_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.MAPLE, () -> trapDoorBlock(BOPBlocks.MAPLE_LOG, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<TrapDoorBlock> SECRET_PINE_LOG_TRAPDOOR = registerLogTrapdoorBlock(BOPWoodType.PINE, () -> trapDoorBlock(BOPBlocks.PINE_LOG, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_FIR_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.FIR, () -> trapDoorBlock(BOPBlocks.STRIPPED_FIR_LOG, BOPBlockSetTypes.FIR));
     public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_REDWOOD_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.REDWOOD, () -> trapDoorBlock(BOPBlocks.STRIPPED_REDWOOD_LOG, BOPBlockSetTypes.REDWOOD));
@@ -152,6 +176,9 @@ public class SBDBlocks {
     public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_MAGIC_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.MAGIC, () -> trapDoorBlock(BOPBlocks.STRIPPED_MAGIC_LOG, BOPBlockSetTypes.MAGIC));
     public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_UMBRAN_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.UMBRAN, () -> trapDoorBlock(BOPBlocks.STRIPPED_UMBRAN_LOG, BOPBlockSetTypes.UMBRAN));
     public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_HELLBARK_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.HELLBARK, () -> trapDoorBlock(BOPBlocks.STRIPPED_HELLBARK_LOG, BOPBlockSetTypes.HELLBARK));
+    public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_EMPYREAL_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.EMPYREAL, () -> trapDoorBlock(BOPBlocks.STRIPPED_EMPYREAL_LOG, BOPBlockSetTypes.EMPYREAL));
+    public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_MAPLE_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.MAPLE, () -> trapDoorBlock(BOPBlocks.STRIPPED_MAPLE_LOG, BOPBlockSetTypes.MAPLE));
+    public static DeferredBlock<TrapDoorBlock> SECRET_STRIPPED_PINE_LOG_TRAPDOOR = registerStrippedLogTrapdoorBlock(BOPWoodType.PINE, () -> trapDoorBlock(BOPBlocks.STRIPPED_PINE_LOG, BOPBlockSetTypes.PINE));
 
     public static DeferredBlock<TrapDoorBlock> SECRET_WHITE_SANDSTONE_TRAPDOOR = registerSandstoneTrapdoorBlock("white", "White", () -> trapDoorBlock(BOPBlocks.WHITE_SANDSTONE, BlockSetType.STONE));
     public static DeferredBlock<TrapDoorBlock> SECRET_CUT_WHITE_SANDSTONE_TRAPDOOR = registerSandstoneTrapdoorBlock("cut_white", "Cut White", () -> trapDoorBlock(BOPBlocks.CUT_WHITE_SANDSTONE, BlockSetType.STONE));

@@ -29,6 +29,9 @@ public class ItemModels extends ItemModelProvider {
         basicItem(SBDBlocks.SECRET_MAGIC_PLANK_DOOR.get());
         basicItem(SBDBlocks.SECRET_UMBRAN_PLANK_DOOR.get());
         basicItem(SBDBlocks.SECRET_HELLBARK_PLANK_DOOR.get());
+        basicItem(SBDBlocks.SECRET_EMPYREAL_PLANK_DOOR.get());
+        basicItem(SBDBlocks.SECRET_MAPLE_PLANK_DOOR.get());
+        basicItem(SBDBlocks.SECRET_PINE_PLANK_DOOR.get());
 
         basicItem(SBDBlocks.SECRET_FIR_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_REDWOOD_LOG_DOOR.get());
@@ -40,6 +43,9 @@ public class ItemModels extends ItemModelProvider {
         basicItem(SBDBlocks.SECRET_MAGIC_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_UMBRAN_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_HELLBARK_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_EMPYREAL_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_MAPLE_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_PINE_LOG_DOOR.get());
 
         basicItem(SBDBlocks.SECRET_STRIPPED_FIR_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_DOOR.get());
@@ -51,6 +57,9 @@ public class ItemModels extends ItemModelProvider {
         basicItem(SBDBlocks.SECRET_STRIPPED_MAGIC_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_STRIPPED_UMBRAN_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_STRIPPED_HELLBARK_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_STRIPPED_EMPYREAL_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_STRIPPED_MAPLE_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_STRIPPED_PINE_LOG_DOOR.get());
 
         basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR.get());
@@ -62,6 +71,9 @@ public class ItemModels extends ItemModelProvider {
         basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAGIC_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_UMBRAN_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_HELLBARK_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_EMPYREAL_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAPLE_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_PINE_LOG_DOOR.get());
 
         basicItem(SBDBlocks.SECRET_HORIZONTAL_FIR_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_HORIZONTAL_REDWOOD_LOG_DOOR.get());
@@ -73,6 +85,9 @@ public class ItemModels extends ItemModelProvider {
         basicItem(SBDBlocks.SECRET_HORIZONTAL_MAGIC_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_HORIZONTAL_UMBRAN_LOG_DOOR.get());
         basicItem(SBDBlocks.SECRET_HORIZONTAL_HELLBARK_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_HORIZONTAL_EMPYREAL_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_HORIZONTAL_MAPLE_LOG_DOOR.get());
+        basicItem(SBDBlocks.SECRET_HORIZONTAL_PINE_LOG_DOOR.get());
 
         basicItem(SBDBlocks.SECRET_WHITE_SANDSTONE_DOOR.get());
         basicItem(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_DOOR.get());
@@ -95,6 +110,9 @@ public class ItemModels extends ItemModelProvider {
         trapdoorModel(SBDBlocks.SECRET_MAGIC_PLANK_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_UMBRAN_PLANK_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_HELLBARK_PLANK_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_EMPYREAL_PLANK_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_MAPLE_PLANK_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_PINE_PLANK_TRAPDOOR.get());
 
         trapdoorModel(SBDBlocks.SECRET_FIR_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_REDWOOD_LOG_TRAPDOOR.get());
@@ -106,6 +124,9 @@ public class ItemModels extends ItemModelProvider {
         trapdoorModel(SBDBlocks.SECRET_MAGIC_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_UMBRAN_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_HELLBARK_LOG_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_EMPYREAL_LOG_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_MAPLE_LOG_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_PINE_LOG_TRAPDOOR.get());
 
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_FIR_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_TRAPDOOR.get());
@@ -117,6 +138,9 @@ public class ItemModels extends ItemModelProvider {
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_MAGIC_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_UMBRAN_LOG_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_STRIPPED_HELLBARK_LOG_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_STRIPPED_EMPYREAL_LOG_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_STRIPPED_MAPLE_LOG_TRAPDOOR.get());
+        trapdoorModel(SBDBlocks.SECRET_STRIPPED_PINE_LOG_TRAPDOOR.get());
 
         trapdoorModel(SBDBlocks.SECRET_WHITE_SANDSTONE_TRAPDOOR.get());
         trapdoorModel(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_TRAPDOOR.get());

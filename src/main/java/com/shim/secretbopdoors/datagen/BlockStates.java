@@ -31,6 +31,9 @@ public class BlockStates extends BlockStateProvider {
         secretDoorBlock(SBDBlocks.SECRET_MAGIC_PLANK_DOOR.get(), "magic_planks");
         secretDoorBlock(SBDBlocks.SECRET_UMBRAN_PLANK_DOOR.get(), "umbran_planks");
         secretDoorBlock(SBDBlocks.SECRET_HELLBARK_PLANK_DOOR.get(), "hellbark_planks");
+        secretDoorBlock(SBDBlocks.SECRET_EMPYREAL_PLANK_DOOR.get(), "empyreal_planks");
+        secretDoorBlock(SBDBlocks.SECRET_MAPLE_PLANK_DOOR.get(), "maple_planks");
+        secretDoorBlock(SBDBlocks.SECRET_PINE_PLANK_DOOR.get(), "pine_planks");
 
         secretDoorBlock(SBDBlocks.SECRET_FIR_LOG_DOOR.get(), "fir_log");
         secretDoorBlock(SBDBlocks.SECRET_REDWOOD_LOG_DOOR.get(), "redwood_log");
@@ -42,6 +45,9 @@ public class BlockStates extends BlockStateProvider {
         secretDoorBlock(SBDBlocks.SECRET_MAGIC_LOG_DOOR.get(), "magic_log");
         secretDoorBlock(SBDBlocks.SECRET_UMBRAN_LOG_DOOR.get(), "umbran_log");
         secretDoorBlock(SBDBlocks.SECRET_HELLBARK_LOG_DOOR.get(), "hellbark_log");
+        secretDoorBlock(SBDBlocks.SECRET_EMPYREAL_LOG_DOOR.get(), "empyreal_log");
+        secretDoorBlock(SBDBlocks.SECRET_MAPLE_LOG_DOOR.get(), "maple_log");
+        secretDoorBlock(SBDBlocks.SECRET_PINE_LOG_DOOR.get(), "pine_log");
 
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_FIR_LOG_DOOR.get(), "stripped_fir_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_DOOR.get(), "stripped_redwood_log");
@@ -53,6 +59,9 @@ public class BlockStates extends BlockStateProvider {
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_MAGIC_LOG_DOOR.get(), "stripped_magic_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_UMBRAN_LOG_DOOR.get(), "stripped_umbran_log");
         secretDoorBlock(SBDBlocks.SECRET_STRIPPED_HELLBARK_LOG_DOOR.get(), "stripped_hellbark_log");
+        secretDoorBlock(SBDBlocks.SECRET_STRIPPED_EMPYREAL_LOG_DOOR.get(), "stripped_empyreal_log");
+        secretDoorBlock(SBDBlocks.SECRET_STRIPPED_MAPLE_LOG_DOOR.get(), "stripped_maple_log");
+        secretDoorBlock(SBDBlocks.SECRET_STRIPPED_PINE_LOG_DOOR.get(), "stripped_pine_log");
 
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_FIR_LOG_DOOR.get(), "stripped_fir_log");
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "stripped_redwood_log");
@@ -64,6 +73,9 @@ public class BlockStates extends BlockStateProvider {
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAGIC_LOG_DOOR.get(), "stripped_magic_log");
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_UMBRAN_LOG_DOOR.get(), "stripped_umbran_log");
         horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_HELLBARK_LOG_DOOR.get(), "stripped_hellbark_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_EMPYREAL_LOG_DOOR.get(), "stripped_empyreal_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_MAPLE_LOG_DOOR.get(), "stripped_maple_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_STRIPPED_HORIZONTAL_PINE_LOG_DOOR.get(), "stripped_pine_log");
 
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_FIR_LOG_DOOR.get(), "fir_log");
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_REDWOOD_LOG_DOOR.get(), "redwood_log");
@@ -75,6 +87,9 @@ public class BlockStates extends BlockStateProvider {
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_MAGIC_LOG_DOOR.get(), "magic_log");
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_UMBRAN_LOG_DOOR.get(), "umbran_log");
         horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_HELLBARK_LOG_DOOR.get(), "hellbark_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_EMPYREAL_LOG_DOOR.get(), "empyreal_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_MAPLE_LOG_DOOR.get(), "maple_log");
+        horizontalDoorBlock(SBDBlocks.SECRET_HORIZONTAL_PINE_LOG_DOOR.get(), "pine_log");
 
         secretDoorBlock(SBDBlocks.SECRET_WHITE_SANDSTONE_DOOR.get(), "white_sandstone");
         secretDoorBlock(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_DOOR.get(), "cut_white_sandstone");
@@ -97,6 +112,9 @@ public class BlockStates extends BlockStateProvider {
         secretTrapdoorBlock(SBDBlocks.SECRET_MAGIC_PLANK_TRAPDOOR.get(), "magic_planks");
         secretTrapdoorBlock(SBDBlocks.SECRET_UMBRAN_PLANK_TRAPDOOR.get(), "umbran_planks");
         secretTrapdoorBlock(SBDBlocks.SECRET_HELLBARK_PLANK_TRAPDOOR.get(), "hellbark_planks");
+        secretTrapdoorBlock(SBDBlocks.SECRET_EMPYREAL_PLANK_TRAPDOOR.get(), "empyreal_planks");
+        secretTrapdoorBlock(SBDBlocks.SECRET_MAPLE_PLANK_TRAPDOOR.get(), "maple_planks");
+        secretTrapdoorBlock(SBDBlocks.SECRET_PINE_PLANK_TRAPDOOR.get(), "pine_planks");
 
         secretTrapdoorBlock(SBDBlocks.SECRET_FIR_LOG_TRAPDOOR.get(), "fir_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_REDWOOD_LOG_TRAPDOOR.get(), "redwood_log");
@@ -108,6 +126,9 @@ public class BlockStates extends BlockStateProvider {
         secretTrapdoorBlock(SBDBlocks.SECRET_MAGIC_LOG_TRAPDOOR.get(), "magic_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_UMBRAN_LOG_TRAPDOOR.get(), "umbran_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_HELLBARK_LOG_TRAPDOOR.get(), "hellbark_log");
+        secretTrapdoorBlock(SBDBlocks.SECRET_EMPYREAL_LOG_TRAPDOOR.get(), "empyreal_log");
+        secretTrapdoorBlock(SBDBlocks.SECRET_MAPLE_LOG_TRAPDOOR.get(), "maple_log");
+        secretTrapdoorBlock(SBDBlocks.SECRET_PINE_LOG_TRAPDOOR.get(), "pine_log");
 
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_FIR_LOG_TRAPDOOR.get(), "stripped_fir_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_REDWOOD_LOG_TRAPDOOR.get(), "stripped_redwood_log");
@@ -119,6 +140,9 @@ public class BlockStates extends BlockStateProvider {
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_MAGIC_LOG_TRAPDOOR.get(), "stripped_magic_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_UMBRAN_LOG_TRAPDOOR.get(), "stripped_umbran_log");
         secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_HELLBARK_LOG_TRAPDOOR.get(), "stripped_hellbark_log");
+        secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_EMPYREAL_LOG_TRAPDOOR.get(), "stripped_empyreal_log");
+        secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_MAPLE_LOG_TRAPDOOR.get(), "stripped_maple_log");
+        secretTrapdoorBlock(SBDBlocks.SECRET_STRIPPED_PINE_LOG_TRAPDOOR.get(), "stripped_pine_log");
 
         secretTrapdoorBlock(SBDBlocks.SECRET_WHITE_SANDSTONE_TRAPDOOR.get(), "white_sandstone");
         secretTrapdoorBlock(SBDBlocks.SECRET_CUT_WHITE_SANDSTONE_TRAPDOOR.get(), "cut_white_sandstone");

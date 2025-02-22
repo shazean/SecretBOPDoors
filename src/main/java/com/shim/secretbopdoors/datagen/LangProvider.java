@@ -2,6 +2,7 @@ package com.shim.secretbopdoors.datagen;
 
 import com.shim.secretbopdoors.SBDBlocks;
 import com.shim.secretbopdoors.SecretBOPDoors;
+import com.shim.secretdoors.SecretDoors;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -15,6 +16,9 @@ public class LangProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
+
+        SecretDoors.LOGGER.debug(SBDBlocks.BLOCK_LANG_EN_US);
+
         for (DeferredBlock<? extends Block> block : SBDBlocks.BLOCK_LANG_EN_US.keySet()) this.add(block.get(), SBDBlocks.BLOCK_LANG_EN_US.get(block));
     }
 }
